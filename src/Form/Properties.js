@@ -114,7 +114,7 @@ const ApplicationForm = ({ color = "blue" }) => {
                       <li className="   text-center">
                         <a
                           className={
-                            "text-xs font-bold  px-5 py-3 shadow-lg rounded  leading-normal " +
+                            "text-xs font-bold  px-1 py-3 shadow-lg rounded  leading-normal " +
                             (openTab === 1
                               ? "text-white bg-" + color + "-600"
                               : "text-" + color + "-600 bg-white")
@@ -133,7 +133,7 @@ const ApplicationForm = ({ color = "blue" }) => {
                       <li className="  text-center">
                         <a
                           className={
-                            "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded  leading-normal " +
+                            "text-xs font-bold uppercase px-1 py-3 shadow-lg rounded  leading-normal " +
                             (openTab === 2
                               ? "text-white bg-" + color + "-600"
                               : "text-" + color + "-600 bg-white")
@@ -152,7 +152,7 @@ const ApplicationForm = ({ color = "blue" }) => {
                       <li className=" text-center">
                         <a
                           className={
-                            "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded  leading-normal " +
+                            "text-xs font-bold uppercase px-1 py-3 shadow-lg rounded  leading-normal " +
                             (openTab === 3
                               ? "text-white bg-" + color + "-600"
                               : "text-" + color + "-600 bg-white")

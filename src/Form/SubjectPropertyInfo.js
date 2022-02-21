@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import Modal from "./../Modal";
 const SubjectPropertyInfo = () => {
   return (
     <div className="container-sm">
@@ -22,7 +23,7 @@ const SubjectPropertyInfo = () => {
         >
           <Form className=" md:px-5 px-3 pb-3">
             <div className=" border  md:px-5 px-3 pb-3">
-              <p className="text-blue-600  font-black  text-5xl py-3 px-4 border-b-2 my-2">
+              <p className="text-blue-600  font-black  text-2xl md:text-5xl py-3 px-4 border-b-2 my-2">
                 Subject Property Information
               </p>
               <div className="text-black font-black py-4">
@@ -530,9 +531,8 @@ const SubjectPropertyInfo = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between">
                   <div className="w-100 md:w-9/12">
-                    <button className="border-2 text-black rounded-md	 px-2 bg-white">
-                      Click to read Terms & Condition
-                    </button>
+                     <Modal />
+  
                     <div className=" w-100 items-center  text-[14px] py-5">
                       <input
                         id="comments"
@@ -542,7 +542,7 @@ const SubjectPropertyInfo = () => {
                       />
                       <label
                         htmlFor="ageinyears"
-                        className=" px-1 text-lg font-medium "
+                        className=" px-1 text-sm md:text-lg font-medium "
                       >
                         I have read, understood and herby agree and consent to
                         the terms and conditions of this application. * Please
@@ -559,7 +559,7 @@ const SubjectPropertyInfo = () => {
                       />
                       <label
                         htmlFor="ageinyears"
-                        className=" px-1 text-lg font-medium "
+                        className=" px-1 text-sm md:text-lg font-medium "
                       >
                         I hereby agree to receive electronic messages containing
                         information, updates and commercial offers, related to
@@ -576,15 +576,12 @@ const SubjectPropertyInfo = () => {
                     >
                       Date
                     </label>
-                    <input type="date" required />
+                    <input type="date" placeholder="MM/DD/YYYY" />
                     <p>Ex:MM/DD/YYYY</p>
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center md:justify-end pt-2">
-                <button className="px-2 py-2 bg-blue-500 text-white text-[16px] 	 border-2 rounded-lg">
-                  Submit
-                </button>
+              <div className="flex justify-center md:justify-end pt-2">  Submit
               </div>
             </div>
           </Form>
