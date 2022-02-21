@@ -4,6 +4,7 @@ import PrimarySection from "./Form/PrimarySection";
 import Properties from "./Form/Properties";
 import Assets from "./Form/Assets";
 import Liablities from "./Form/liabilites";
+import SubjectPropertyInfo from "./Form/SubjectPropertyInfo";
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
       <Properties />
       <Assets />
       <Liablities />
+      <SubjectPropertyInfo />
     </div>
   );
 }

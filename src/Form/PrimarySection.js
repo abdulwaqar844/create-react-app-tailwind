@@ -8,7 +8,7 @@ const ApplicationForm = ({ color = "blue" }) => {
       <div className=" m-4">
         <p className="text-blue-600  font-black  text-5xl py-3 px-4 border-b-2 my-2">
           Primary Applicant
-        </p>{" "}
+        </p>
         <Formik
           initialValues={{ firstName: "" }}
           validationSchema={Yup.object({
@@ -84,7 +84,7 @@ const ApplicationForm = ({ color = "blue" }) => {
                   <ErrorMessage name="firstName" />
                 </div>
               </div>
-              <div className=" flex flex-col lg:flex-row justify-between items-center	py-3	">
+              <div className=" flex flex-col md:flex-row flex-wrap justify-between items-center	py-3	">
                 <div className="w-60 md:w-40 h-36 justify-around flex flex-col text-[14px] ">
                   <label htmlFor="aprox_date" className=" text-lg font-medium ">
                     Birthday *
@@ -297,13 +297,13 @@ const ApplicationForm = ({ color = "blue" }) => {
 
               <div>
                 <ul
-                  className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
+                  className="flex mb-0 list-none justify-center md:justify-start flex-wrap pt-3 pb-4 flex-row"
                   role="tablist"
                 >
                   <li className="   text-center">
                     <a
                       className={
-                        "text-xs font-bold  px-5 py-3 shadow-lg rounded  leading-normal " +
+                        "text-xs font-bold boder-2 px-1 py-3 shadow-lg rounded  leading-normal " +
                         (openTab === 1
                           ? "text-white bg-" + color + "-600"
                           : "text-" + color + "-600 bg-white")
@@ -322,7 +322,7 @@ const ApplicationForm = ({ color = "blue" }) => {
                   <li className="  text-center">
                     <a
                       className={
-                        "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded  leading-normal " +
+                        "text-xs border-2 font-bold uppercase px-1 py-3 shadow-lg rounded  leading-normal " +
                         (openTab === 2
                           ? "text-white bg-" + color + "-600"
                           : "text-" + color + "-600 bg-white")
@@ -341,7 +341,7 @@ const ApplicationForm = ({ color = "blue" }) => {
                   <li className=" text-center">
                     <a
                       className={
-                        "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded  leading-normal " +
+                        "text-xs border-2 font-bold uppercase px-1 py-3 shadow-lg rounded  leading-normal " +
                         (openTab === 3
                           ? "text-white bg-" + color + "-600"
                           : "text-" + color + "-600 bg-white")
